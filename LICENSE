@@ -19,3 +19,24 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+```python name=setup.py
+from setuptools import setup, find_packages
+
+setup(
+    name="lcxnha",
+    version="0.1.0",
+    description="LCXNHA: Neural Head Avatar Implementation",
+    author="Lcx710223",
+    author_email="lcx710223@example.com",
+    packages=find_packages(),
+    install_requires=[
+        "torch>=1.9.0",
+        "pytorch3d>=0.7.0",
+        "numpy>=1.19.2",
+        "opencv-python>=4.5.3",
+        "pillow>=8.3.1",
+        "tqdm>=4.62.2",
+    ],
+    python_requires=">=3.8",
+)
